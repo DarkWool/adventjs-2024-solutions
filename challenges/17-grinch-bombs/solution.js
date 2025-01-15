@@ -2,28 +2,22 @@
  * @param {boolean[][]} grid
  * @returns {number[][]}
  */
-
 function detectBombs(grid) {
   return grid.map((row, y) => {
     return row.map((el, x) => {
-      let adjacentBombs = 0;
+      let adjBombs = 0;
 
-      const adjacentPositions = [
-        [y - 1, x - 1],
-        [y - 1, x],
-        [y - 1, x + 1],
-        [y, x - 1],
-        [y, x + 1],
-        [y + 1, x - 1],
-        [y + 1, x],
-        [y + 1, x + 1],
-      ];
+      for (let adjCol = y - 1; adjCol <= y + 1; adjCol++) {
+        if (y < 0) continue;
 
-      adjacentPositions.forEach((coords) => {
-        adjacentBombs += grid?.[coords[0]]?.[coords[1]] ? 1 : 0;
-      });
+        for (let adjRow = x - 1; adjRow <= x + 1; adjRow++) {
+          if ((adjCol === y && adjRow === x) || x < 0) continue;
 
-      return adjacentBombs;
+          grid?.[adjCol]?.[adjRow] && adjBombs++;
+        }
+      }
+
+      return adjBombs;
     });
   });
 }

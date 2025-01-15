@@ -29,4 +29,4 @@ I will be happy to connect with you! :) ✨
 | 14  | 🦌 Weaving the reno              | [code](./challenges/14/solution.js) | ⭐⭐⭐⭐⭐ |
 | 15  | ✏️ Drawing tables                | [code](./challenges/15/solution.js) | ⭐⭐⭐⭐⭐ |
 | 16  | ❄️ Cleaning the snow path        | [code](./challenges/16/solution.js) | ⭐⭐⭐⭐⭐ |
-| 17  | 💣 Grinch's bombs                | [code](./challenges/17/solution.js) |  ⭐⭐⭐⭐  |
+| 17  | 💣 Grinch's bombs                | [code](./challenges/17/solution.js) | ⭐⭐⭐⭐⭐ |
